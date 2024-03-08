@@ -9,3 +9,5 @@ venv/
 *.toml
 main.py
 .gitignore
+.replit
+CODEOWNERS
