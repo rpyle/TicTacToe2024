@@ -81,6 +81,8 @@ def move(player, board, score):
 
   if (spot5 == "y"):
     spot = 1
+    if spot1 == player:
+      spot = 0
   elif (spot5 == 0):
     spot = 5
 
