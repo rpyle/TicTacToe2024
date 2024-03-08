@@ -1,4 +1,4 @@
-team_name = 'E0'
+team_name = 'Pyle'
 strategy_name = 'Next Open'
 strategy_description = 'Play the next open spot.'
 
@@ -10,7 +10,8 @@ def print_board(board):
   print(board[2][0]+'|'+board[2][1]+'|'+board[2][2])
 
 def move(player, board, score):
-  print_board(board)
+  #print_board(board)
+  
   r = 0
   c = 0
   while board[r][c] != ' ':
