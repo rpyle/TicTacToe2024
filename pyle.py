@@ -1,4 +1,4 @@
-team_name = 'E0'
+team_name = 'Pyle'
 strategy_name = 'Next Open'
 strategy_description = 'Play the next open spot.'
 
