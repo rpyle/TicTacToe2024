@@ -1,6 +1,6 @@
 team_name = 'Burnscoolcat'
-strategy_name = 'Try something'
-strategy_description = 'Just try and put X somewhere'
+strategy_name = 'Right Triangle Method'
+strategy_description = 'Try and take the backwards L and win or take the diagnol and win'
 
 def print_board(board):
   print(board[0][0]+'|'+board[0][1]+'|'+board[0][2])
