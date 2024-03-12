@@ -24,11 +24,11 @@ def move(player, board, score):
  
   if co < 2600:
     co = co+1
-    print (co)
+   # print (co)
   global p
   if p < 2600:
     p = p+1 
-    print (player)
+   # print (player)
   
   r = 1
   c = 1
@@ -130,13 +130,13 @@ def move(player, board, score):
     r = 1
     c = 0
 
-  print (r,c)
+  '''  print (r,c)
   if i < 2600:
    print(score)
    i = i+1
   if t < 2600:
    print(print_board(board))
-   t = t+1
+   t = t+1'''
       
   return r, c
   
