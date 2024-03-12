@@ -1,5 +1,5 @@
 team_name = 'Pyle'
-strategy_name = 'Next Open'
+strategy_name = 'IDK'
 strategy_description = 'Play the next open spot.'
 
 def print_board(board):
@@ -12,7 +12,7 @@ def print_board(board):
 def move(player, board, score):
   #print_board(board)
   
-  r = 0
+  r = 1
   c = 0
   while board[r][c] != ' ':
     c = c + 1
