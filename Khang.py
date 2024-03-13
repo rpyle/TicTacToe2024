@@ -36,7 +36,7 @@ def move(player, board, score):
     c = 0
   elif board[1][0] == ' ':
     r = 1 
-    c = 1
+    c = 0
   elif board[0][1] == ' ':
     r = 0 
     c = 1
