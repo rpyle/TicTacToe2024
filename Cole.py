@@ -1,6 +1,5 @@
-'''
-team_name = 'test'
-strategy_name = 'Next Open'
+team_name = 'Cole'
+strategy_name = 'Win'
 strategy_description = 'Play the next open spot.'
 
 def print_board(board):
@@ -9,16 +8,18 @@ def print_board(board):
   print(board[1][0]+'|'+board[1][1]+'|'+board[1][2])
   print('-+-+-')
   print(board[2][0]+'|'+board[2][1]+'|'+board[2][2])
-  print(print_board)
 
 def move(player, board, score):
-  r = 0
-  c = 0
-  while board[r][c] != ' ':
+  print_board(board)
+  r = 1
+  c = 1
+  if board[r][c] == ' ':
+    return r, c
+  elif board[r-1][c+1] == ' ':
     c = c + 1
-    if c > 2:
-      c = 0
-      r = r + 1
-  
-  return r, c
-'''
+    r = r - 1
+    return r, c
+  elif board[r-1][c-1] == ' ':
+    c = c - 1
+    r = r - 1
+    return r, c
