@@ -1,6 +1,6 @@
 team_name = 'koen'
 strategy_name = 'Middle & Corners'
-strategy_description = 'Play middle and corners, then play first open spots.' 
+strategy_description = 'Play middle and corners, and then play first open spots.' 
 
 def print_board(board):
   print(board[0][0]+'|'+board[0][1]+'|'+board[0][2])
