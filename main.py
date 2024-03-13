@@ -5,13 +5,13 @@ import importlib
 import example0
 import example1
 import example2
-
-
+import koen
 
 number_of_rounds = 100
 modules = [example0,
            example1,
-           example2
+           example2,
+           koen
           ]
 
 test_board = [['O', 'X', 'O'],
