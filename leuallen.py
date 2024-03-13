@@ -1,7 +1,7 @@
+import random
 team_name = 'leuallen'
 strategy_name = 'randomized movement to tie'
 strategy_description = 'top right then select random for tie'
-import random
 
 def print_board(board):
   print(board[0][0]+'|'+board[0][1]+'|'+board[0][2])
