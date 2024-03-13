@@ -5,13 +5,16 @@ import importlib
 import example0
 import example1
 import example2
+import koen
+=======
 import pyle
 
 number_of_rounds = 100
 modules = [example0,
            example1,
            example2,
-           pyle
+           koen,
+=======    pyle
           ]
 
 test_board = [['O', 'X', 'O'],
