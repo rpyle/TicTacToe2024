@@ -19,9 +19,9 @@ def move(player, board, score):
       r = 1
       if board [r][c] == ' ':
         return r,c
-      if board [r][c] != '':
+      if board [r][c] != ' ':
         c = c - 1
-        if c > 2 :
+        if c < 0 :
           c = 0
           r =2
           return r,c
