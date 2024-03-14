@@ -10,3 +10,4 @@ venv/
 main.py
 .gitignore
 .replit
+CODEOWNERS
