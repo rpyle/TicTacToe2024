@@ -1,8 +1,8 @@
 import random
 
 team_name = 'Preston_test'
-strategy_name = ''
-strategy_description = ''
+strategy_name = 'Middle and corners'
+strategy_description = 'Prioritize middle and corners whilelist not getting checkmated'
 
 def print_board(board):
   print(board[0][0]+'|'+board[0][1]+'|'+board[0][2])
