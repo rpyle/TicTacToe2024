@@ -1,8 +1,8 @@
 import random
 
 team_name = 'Preston_test'
-strategy_name = ''
-strategy_description = ''
+strategy_name = 'Middle and corners'
+strategy_description = 'Prioritize middle and corners whilelist not getting checkmated'
 
 def print_board(board):
   print(board[0][0]+'|'+board[0][1]+'|'+board[0][2])
@@ -24,8 +24,6 @@ spot9 = 2,2
 
 
 def move(player, board, score):
-  print_board(board)
-  print(player, score)
   if player == 'X':
     other_player = 'O'
     r = random.randint(0,2)
@@ -129,4 +127,4 @@ def move(player, board, score):
       r = 1
       c = 2
     return r, c
-  print(score)
+  
