@@ -24,8 +24,6 @@ spot9 = 2,2
 
 
 def move(player, board, score):
-  print_board(board)
-  print(player, score)
   if player == 'X':
     other_player = 'O'
     r = random.randint(0,2)
@@ -129,4 +127,4 @@ def move(player, board, score):
       r = 1
       c = 2
     return r, c
-  print(score)
+  
