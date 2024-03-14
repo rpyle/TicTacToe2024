@@ -1,5 +1,5 @@
 team_name = 'Tallis'
-strategy_name = 'Right Side'
+strategy_name = 'THE Right Side'
 strategy_description = 'Fills out the right side, then goes through each spot'
 
 def print_board(board):
