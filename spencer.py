@@ -11,7 +11,7 @@ def print_board(board):
   print(board[2][0]+'|'+board[2][1]+'|'+board[2][2])
 
 def move(player, board, score):
-  '''print("b")
+  '''print()
   print(player,score)
   print_board(board)'''
   r = 0
@@ -63,6 +63,21 @@ def move(player, board, score):
         r = 2
         c = 1
   
+    if board[0][1] and board[2][1] == ' ' or player:
+      if board[0][1] == ' ':
+        r = 0
+        c = 1
+      if board[2][1] == ' ':
+        r = 2
+        c = 1
+    if board[1][0] and board[1][2] == player or ' ':
+      if board[1][0] == ' ':
+        r = 1
+        c = 0
+      if board[1][2] == ' ':
+        r = 1
+        c = 2
+      
   return r, c
 
   
