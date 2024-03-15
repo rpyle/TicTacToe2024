@@ -94,42 +94,6 @@ def movesetstart(player, board, score):
       elif board[2][2] == 'O' and board[0][2] == 'O' and moves == 5:
         moves += 2
         r, c = 1, 2
-      elif board[0][0] == 'X' and board[0][2] == 'X' and moves == 5:
-        moves += 2
-        r, c = 0, 1
-      elif board[0][0] == 'X' and board[0][1] == 'X' and moves == 5:
-        moves += 2
-        r, c = 0, 2
-      elif board[0][1] == 'X' and board[0][2] == 'X' and moves == 5:
-        moves += 2
-        r, c = 0, 0
-      elif board[0][0] == 'X' and board[2][0] == 'X' and moves == 5:
-        moves += 2
-        r, c = 1, 0
-      elif board[0][0] == 'X' and board[1][0] == 'X' and moves == 5:
-        moves += 2
-        r, c = 2, 0
-      elif board[1][0] == 'X' and board[2][0] == 'X' and moves == 5:
-        moves += 2
-        r, c = 0, 0
-      elif board[2][0] == 'X' and board[2][1] == 'X' and moves == 5:
-        moves += 2
-        r, c = 2, 2
-      elif board[2][0] == 'X' and board[2][2] == 'X' and moves == 5:
-        moves += 2
-        r, c = 2, 1
-      elif board[2][1] == 'X' and board[2][2] == 'X' and moves == 5:
-        moves += 2 
-        r, c = 2, 1
-      elif board[2][2] == 'X' and board[1][2] == 'X' and moves == 5:
-        moves += 2
-        r, c = 0, 2
-      elif board[1][2] == 'X' and board[0][2] == 'X' and moves == 5:
-        moves +=2 
-        r, c = 2, 2
-      elif board[2][2] == 'X' and board[0][2] == 'X' and moves == 5:
-        moves += 2
-        r, c = 1, 2
       else:
         if board[r][c] == ' ' and moves == 7:
           moves += 2
@@ -310,42 +274,6 @@ def moveset5(player, board, score):
     elif board[2][2] == 'O' and board[0][2] == 'O' and moves == 5:
       moves += 2
       r,c = 1, 2
-    elif board[0][0] == 'X' and board[0][2] == 'X' and moves == 5:
-      moves += 2
-      r, c = 0, 1
-    elif board[0][0] == 'X' and board[0][1] == 'X' and moves == 5:
-      moves += 2
-      r, c = 0, 2
-    elif board[0][1] == 'X' and board[0][2] == 'X' and moves == 5:
-      moves += 2
-      r, c = 0, 0
-    elif board[0][0] == 'X' and board[2][0] == 'X' and moves == 5:
-      moves += 2
-      r, c = 1, 0
-    elif board[0][0] == 'X' and board[1][0] == 'X' and moves == 5:
-      moves += 2
-      r, c = 2, 0
-    elif board[1][0] == 'X' and board[2][0] == 'X' and moves == 5:
-      moves += 2
-      r, c = 0, 0
-    elif board[2][0] == 'X' and board[2][1] == 'X' and moves == 5:
-      moves += 2
-      r, c = 2, 2
-    elif board[2][0] == 'X' and board[2][2] == 'X' and moves == 5:
-      moves += 2
-      r, c = 2, 1
-    elif board[2][1] == 'X' and board[2][2] == 'X' and moves == 5:
-      moves += 2 
-      r, c = 2, 1
-    elif board[2][2] == 'X' and board[1][2] == 'X' and moves == 5:
-      moves += 2
-      r, c = 0, 2
-    elif board[1][2] == 'X' and board[0][2] == 'X' and moves == 5:
-      moves +=2 
-      r, c = 2, 2
-    elif board[2][2] == 'X' and board[0][2] == 'X' and moves == 5:
-      moves += 2
-      r, c = 1, 2
     else:
       if board[r][c] == ' ':
         moves += 2
