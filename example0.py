@@ -1,4 +1,3 @@
-'''
 team_name = 'test'
 strategy_name = 'Next Open'
 strategy_description = 'Play the next open spot.'
@@ -21,4 +20,3 @@ def move(player, board, score):
       r = r + 1
   
   return r, c
-'''

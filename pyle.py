@@ -29,7 +29,6 @@ def load_lists():
   weights_file.close()
   return states, weights
 
-
 def save_lists(board_states, weights):
   weights_file = open(file_name, 'w')
   for i in range(len(board_states)):
@@ -50,7 +49,6 @@ def normalize_weights(weights):
     weights[n] = weights[n] * m
   return weights
 
-
 def move(player, board, score):
   global old_score, board_states, weights_list, current_game_boards, current_game_moves, round
 
@@ -64,16 +62,20 @@ def move(player, board, score):
                 board[2][0] + board[2][1] + board[2][2]
 
   # detect a new round
-  if board_state[1:] == '         ':
+  n = 0
+  for letter in board_state[1:]:
+   if letter != ' ':
+     n += 1
+  if n < 2:
     round += 1
 
     # weightings for loss/win/cats
     if score < old_score:
       m = -0.05
     elif score > old_score:
-      m = 0.05
+      m = 0.02
     else:
-      m = 0.03
+      m = 0
 
     # find the board states that match the ones from the last game and weight their probability
     for x in range(len(current_game_boards)):
