@@ -6,12 +6,63 @@ import example0
 import example1
 import example2
 
+import AidenR
+import Ben
+import Best
+import Burnscoolcat
+import chloe
+import Cole
+import Crane
+import isaiah
+import Jacob
+import Johnathan
+import kendrasmith
+import Khang
+import koen
+import Leigh
+import Moses
+import nyby
+import oneil
+import Preston
+import reece
+import Robert
+import Salcido
+import spencer
+import tallis
+import UNstrat
+
+import pyle
 
 
 number_of_rounds = 100
 modules = [example0,
            example1,
-           example2
+           example2,
+           AidenR,
+           #Ben,
+           Best,
+           Burnscoolcat,
+           chloe,
+           #Cole,
+           #Crane,
+           isaiah,
+           Jacob,
+           Johnathan,
+           kendrasmith,
+           Khang,
+           koen,
+           Leigh,
+           Moses,
+           nyby,
+           oneil,
+           #Preston,
+           reece,
+           Robert,
+           Salcido,
+           spencer,
+           tallis,
+           UNstrat,
+           pyle
           ]
 
 test_board = [['O', 'X', 'O'],
@@ -84,7 +135,7 @@ def play_tournament(modules):
   return scores
   
 def play_iterative_rounds(player1, player2):
-
+  print(player1, player2)
   score1 = 0
   score2 = 0
   for round in range(number_of_rounds):
