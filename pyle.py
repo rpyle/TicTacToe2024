@@ -62,11 +62,7 @@ def move(player, board, score):
                 board[2][0] + board[2][1] + board[2][2]
 
   # detect a new round
-  n = 0
-  for letter in board_state[1:]:
-   if letter != ' ':
-     n += 1
-  if n < 2:
+  if len(board_state[1:].split()) <= 1:
     round += 1
 
     # weightings for loss/win/cats
