@@ -70,10 +70,8 @@ def move(player, board, score):
     elif board[0][0] == other_player and board[0][2] == other_player:
       r = 0
       c = 1
-
-    return r, c
     
-  if player == 'O':
+  else:
     other_player = 'X'
     r = random.randint(0,2)
     c = random.randint(0,2)
@@ -126,5 +124,5 @@ def move(player, board, score):
     elif board[0][2] == other_player:
       r = 1
       c = 2
-    return r, c
+  return r, c
   
