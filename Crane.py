@@ -23,8 +23,17 @@ def move(player, board, score):
               r = 2
               c = 2
               if board[r][c] != ' ':
-                  c = c + 1
-                  r = r + 1
+                  c = 2
+                  r = 1
+                  if board[r][c] != ' ':
+                      c = 1
+                      r = 2
+                      if board[r][c] != ' ':
+                          c = 0
+                          r = 1
+                       
+                    
+              
 
   return r, c
       
